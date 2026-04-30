@@ -1,0 +1,118 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "wiki_auto_sync.py",
+      "file_type": "code",
+      "source_file": "scripts/wiki_auto_sync.py",
+      "source_location": "L1",
+      "id": "wiki_auto_sync_py",
+      "community": 0,
+      "norm_label": "wiki_auto_sync.py"
+    },
+    {
+      "label": "run_cmd()",
+      "file_type": "code",
+      "source_file": "scripts/wiki_auto_sync.py",
+      "source_location": "L24",
+      "id": "wiki_auto_sync_run_cmd",
+      "community": 0,
+      "norm_label": "run_cmd()"
+    },
+    {
+      "label": "switch_gh_user()",
+      "file_type": "code",
+      "source_file": "scripts/wiki_auto_sync.py",
+      "source_location": "L27",
+      "id": "wiki_auto_sync_switch_gh_user",
+      "community": 0,
+      "norm_label": "switch_gh_user()"
+    },
+    {
+      "label": "sync_all()",
+      "file_type": "code",
+      "source_file": "scripts/wiki_auto_sync.py",
+      "source_location": "L31",
+      "id": "wiki_auto_sync_sync_all",
+      "community": 0,
+      "norm_label": "sync_all()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/wiki_auto_sync.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_src": "wiki_auto_sync_py",
+      "_tgt": "wiki_auto_sync_run_cmd",
+      "source": "wiki_auto_sync_py",
+      "target": "wiki_auto_sync_run_cmd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/wiki_auto_sync.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_src": "wiki_auto_sync_py",
+      "_tgt": "wiki_auto_sync_switch_gh_user",
+      "source": "wiki_auto_sync_py",
+      "target": "wiki_auto_sync_switch_gh_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/wiki_auto_sync.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_src": "wiki_auto_sync_py",
+      "_tgt": "wiki_auto_sync_sync_all",
+      "source": "wiki_auto_sync_py",
+      "target": "wiki_auto_sync_sync_all",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/wiki_auto_sync.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "wiki_auto_sync_switch_gh_user",
+      "_tgt": "wiki_auto_sync_run_cmd",
+      "source": "wiki_auto_sync_run_cmd",
+      "target": "wiki_auto_sync_switch_gh_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/wiki_auto_sync.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_src": "wiki_auto_sync_sync_all",
+      "_tgt": "wiki_auto_sync_run_cmd",
+      "source": "wiki_auto_sync_run_cmd",
+      "target": "wiki_auto_sync_sync_all",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/wiki_auto_sync.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_src": "wiki_auto_sync_sync_all",
+      "_tgt": "wiki_auto_sync_switch_gh_user",
+      "source": "wiki_auto_sync_switch_gh_user",
+      "target": "wiki_auto_sync_sync_all",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
