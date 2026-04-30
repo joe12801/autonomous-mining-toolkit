@@ -12,19 +12,22 @@ This toolkit powers the **Hermes Agent**'s mission to transform raw data (code, 
 
 ### 1. 🚰 Driller (钻头) - `scripts/driller.py`
 **工业级源码精炼工具**。专门解决大型仓库（100MB+）无法直接喂给 LLM 的痛点。
-- **去渣 (Slag Stripping)**: 自动过滤 `node_modules`, `.git`, `dist` 等 10+ 种干扰目录。
-- **提纯 (Refining)**: 自动剔除所有空行和首尾空格，极大提升 Token 的信息密度。
-- **智能分片 (Auto-Sharding)**: 将源码切分为 5MB 的标准矿包，完美绕过 NotebookLM 等工具的单文件上传限制。
 - **用法**: `python3 scripts/driller.py <仓库路径> <产出前缀>`
+- **示例**: `python3 scripts/driller.py ./my-large-repo my_project` -> 产出 `my_project_part1.txt`
 
 ### 2. 🗺️ Graphify (图谱)
 **代码拓扑探测器**。在正式开采前，通过静态分析构建模块间的耦合图谱。
-- **上帝节点 (God Nodes)**: 快速识别系统中连接数最高的核心类和管理器。
-- **社区聚类 (Community)**: 自动划分逻辑模块，帮助 Agent 确定“先开采哪一块”。
+- **用法**: `graphify update <仓库路径>`
+- **示例**: `graphify update ./my-large-repo` -> 在 `./my-large-repo/graphify-out/` 产出 `GRAPH_REPORT.md`
 
 ### 3. 📒 NotebookLM Studio (开采平台)
 **语义挖掘中心**。利用超长上下文处理精炼后的矿包。
-- **多模态产出**: 支持一键生成 **Data Table** (API 清单)、**Mind Map** (架构脑图) 和 **Audio Overview** (中文技术简报)。
+- **用法 (CLI)**:
+  - **创建笔记本**: `notebooklm create "项目名称"`
+  - **添加矿包**: `notebooklm source add my_project_part1.txt`
+  - **生成资产**:
+    - `notebooklm generate data-table "API 清单"`
+    - `notebooklm generate audio --language zh_Hans "项目深度解构"`
 
 ---
 
