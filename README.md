@@ -8,6 +8,20 @@ This toolkit powers the **Hermes Agent**'s mission to transform raw data (code, 
 
 ---
 
+## ⚡ Quick Start | 快速开始
+
+### One-Click Install for Hermes Agents | 一键配置脚本
+For agents with terminal access, simply run:
+对于具备终端权限的 Agent，直接执行以下命令：
+
+```bash
+curl -sSL https://raw.githubusercontent.com/joe12801/autonomous-mining-toolkit/main/install.sh | bash
+```
+*This script installs dependencies and imports the SOP v2.0 skill automatically.*
+*该脚本将自动安装依赖并导入 SOP v2.0 技能。*
+
+---
+
 ## 🚀 What's New in v2.0 | v2.0 重大更新
 
 - **Industrial Driller (工业级钻头)**: Automated `driller.py` for stripping "slag" (node_modules, junk files) and intelligent code sharding.
