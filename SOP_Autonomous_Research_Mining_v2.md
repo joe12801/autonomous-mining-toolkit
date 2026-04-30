@@ -41,12 +41,14 @@ Use **Graphify** to detect module coupling.
 ### 4. Mining (开采)
 Execute deep-dive queries against the refined NotebookLM sources.
 - **Standard**: All questions and reports MUST be in **Chinese**.
+- **Studio Integration**: Use NotebookLM Studio to generate **Data Tables**, **Mind Maps**, and **Audio/Video Overviews** for a multi-dimensional perspective.
 - **Strategy**: Perform "Cross-file Logic Tracing" based on God Nodes.
 
 ### 5. Storage (入库)
 Save the refined knowledge into the shared repository.
 - **Path**: `/root/hermes-shared/wiki/research/mining-archive/`.
 - **Format**: Markdown with `[[Internal Links]]`.
+- **Media**: Upload generated audio/video briefing to Feishu Drive and link it in the wiki page.
 
 ### 6. Synchronization (同步)
 Deliver the findings to the User's mobile-accessible knowledge base.
