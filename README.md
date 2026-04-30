@@ -57,9 +57,9 @@ To see this toolkit in action, check out the results from our latest mining miss
 | **Exploration (勘探)** | [notebooklm-py](https://github.com/win4r/notebooklm-py) | Context-heavy pre-processing & semantic filtering. <br> 全量源码索引、语义初筛。 | **Low**: Offload heavy lifting to Google. <br> 利用 Google 的超长上下文处理重体力活。 |
 | **Drilling (钻探)** | `driller.py` | Slag stripping & high-density code extraction. <br> 矿渣剔除、高浓度代码精炼与分片。 | **Efficiency**: Maximize signal-to-noise ratio. <br> 极致能效比：只上传高价值代码核心。 |
 | **Mapping (图谱)** | [graphify](https://github.com/safishamsi/graphify) | God Node detection & modularity analysis. <br> 自动构建代码知识图谱、上帝节点识别。 | **Structure**: See the architecture before reading. <br> 结构化：读码前先看透系统骨架。 |
-| **Mining (开采)** | [llm-wiki-skill](https://github.com/sdyckjq-lab/llm-wiki-skill) | Structured Markdown sedimentation & cross-linking. <br> 结构化沉淀、永久链接、知识资产化。 | **Assetization**: Convert noise into signal. <br> 资产化：将碎片信息炼成可复用的技术资产。 |
-| **Storage (入库)** | [Feishu Wiki](https://www.feishu.cn/) | Cloud knowledge center & multi-device accessibility. <br> 云端知识中心、跨端查阅、全量搜索。 | **Collaboration**: Instant publishing & indexing. <br> 协同化：一键推送飞书，实现移动端阅读。 |
-| **Sync (同步)** | [Mining Archive](https://github.com/joe12801/exploration-mining-results) | Cross-session synchronization & behavior memory. <br> 跨会话克隆、多端同步、行为记忆。 | **Persistence**: Never lose a mined result. <br> 永恒化：确保挖掘结果在各端实时同步。 |
+| **Mining (开采)** | [llm-wiki-skill](https://github.com/sdyckjq-lab/llm-wiki-skill) | Structured Markdown sedimentation & Studio multi-modal assets. <br> 结构化沉淀、NotebookLM Studio 多模态资产 (音视频/脑图) 生成。 | **Assetization**: Convert noise into signal. <br> 资产化：将碎片信息炼成音视频、脑图等可复用的技术资产。 |
+| **Storage (入库)** | [Feishu Wiki](https://www.feishu.cn/) | Cloud knowledge center & Multi-media attachment hosting. <br> 云端知识中心、多媒体附件 (音频/视频/报告) 永久托管。 | **Collaboration**: Instant publishing & indexing. <br> 协同化：一键推送飞书，实现多模态知识移动端消费。 |
+
 
 ---
 
