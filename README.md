@@ -38,6 +38,18 @@ curl -sSL https://raw.githubusercontent.com/joe12801/autonomous-mining-toolkit/m
 
 ## 🧠 Core Architecture | 核心架构
 
+### 📂 Mining Samples | 采矿实战案例
+To see this toolkit in action, check out the results from our latest mining mission on the **winboat** project:
+想要了解本工具箱的实战威力，请查看我们对 **winboat** 项目的最新开采成果：
+
+- **📑 Technical Report**: [Architecture Deep Dive (Markdown)](WINBOAT_MINING_SAMPLE.md)
+- **📈 Data Table**: [API & Environment Specification (Markdown)](WINBOAT_API_TABLE.md)
+- **🗺️ Knowledge Graph**: [winboat Code Topology (Graphify Report)](sample_graphify_out/GRAPH_REPORT.md)
+- **🎙️ Audio Overview**: [**Deep Dive: Native Windows apps on Linux (Chinese Audio)**](sample_winboat_audio.mp3)
+  - *Click to download the AI-generated podcast summary (10 min).*
+
+---
+
 ### Six-Stage Mining Pipeline | 六位一体采矿流水线
 
 | Stage | 工具 (Tool) | 职能 (Function) | Token 策略 (Strategy) |
