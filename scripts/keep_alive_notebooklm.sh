@@ -1,17 +1,16 @@
 #!/bin/bash
-# ============================================================
 # keep_alive_notebooklm.sh — NotebookLM 心跳保活脚本
-# NotebookLM Heartbeat Keep-Alive Script
-#
-# Purpose | 用途: Send periodic heartbeat to maintain NotebookLM session
-# Schedule | 调度: Recommend every 30 min via cron
-# Logs | 日志: /root/notebooklm_heartbeat.log
-# ============================================================
+# 通过 notebooklm list 维持 Google session 活跃
 
-export PYTHONPATH=/opt/notebooklm-shared/notebooklm-py/src
+LOG=/home/joe1280/notebooklm_heartbeat.log
 
-# Send heartbeat via notebooklm list command | 通过 notebooklm list 发送心跳
-sudo -u joe1280 /root/hermes-agent/venv/bin/python3 -m notebooklm list > /dev/null 2>&1
+sudo -u joe1280 /home/joe1280/notebooklm-py/.venv/bin/notebooklm list > /dev/null 2>&1
 
-# Log heartbeat | 记录心跳时间
-echo "[$(date)] NotebookLM Heartbeat Sent | 心跳已发送" >> /root/notebooklm_heartbeat.log
+if [ $? -eq 0 ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ✅ 心跳成功" >> "$LOG"
+else
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] ❌ 心跳失败" >> "$LOG"
+fi
+
+# 只保留最近 200 行日志
+tail -200 "$LOG" > "$LOG.tmp" && mv "$LOG.tmp" "$LOG"
